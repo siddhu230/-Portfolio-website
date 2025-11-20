@@ -5,8 +5,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Hides scrollbar for chrome Edge */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+
+/* Hide scrollbar for Firefox */
 html {
+  scrollbar-width: none;
     scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for IE and old Edge */
+body {
+  -ms-overflow-style: none;
 }
 
 body {
@@ -279,4 +292,5 @@ section {
     .certification-card {
         flex: 0 0 250px;
     }
+
 }
